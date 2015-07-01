@@ -1,5 +1,15 @@
 // Components :: Button
 
 .im-button {
-
+  background-color: $white;
+  border: 1px solid;
+  border-color: $im-button-border-color;
+  border-radius: $im-button-border-radius;
+  box-shadow: $im-button-shadow;
+  color: $color-link;
+  font-weight: $font-weight-bold;
+  height: $im-button-size;
+  line-height: $im-button-size;
+  padding: $im-button-padding;
+  text-transform: capitalize;
 }

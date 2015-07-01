@@ -1,0 +1,11 @@
+// Variables :: Color
+
+$black:     #000 !default;
+$white:     #fff !default;
+$blue:      #2F84E7 !default;
+
+$color-primary:           $blue !default;
+$color-link:              $blue !default;
+
+$color-border:            #ddd !default;
+$color-border-edge:       darken($color-border, 4) !default;
