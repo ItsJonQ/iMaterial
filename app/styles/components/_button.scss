@@ -2,6 +2,7 @@
 
 .im-button {
   @include transition(background 0.16s ease, border 0.16s ease, box-shadow 0.16s ease);
+  @include user-select(none);
   background-color: $im-button-backgrond-color;
   border: 1px solid;
   border-color: $im-button-border-color;
@@ -28,6 +29,14 @@
   &:focus {
     border-color: $im-button--focus-border-color;
     outline: none;
+  }
+
+  &:disabled,
+  .is-disabled {
+    color: $color-text--light;
+    cursor: not-allowed;
+    border-color: $im-button--disabled-border-color;
+    box-shadow: none;
   }
 }
 
@@ -56,5 +65,23 @@
     &:active {
       box-shadow: $im-button--active-shadow, $im-button--primary--focus-shadow;
     }
+  }
+
+  &:disabled,
+  .is-disabled {
+    border-color: $im-button--primary-border-color;
+    box-shadow: none;
+    color: $white;
+    opacity: 0.5;
+  }
+}
+
+.im-button--link {
+  border-color: transparent;
+  box-shadow: none;
+
+  &:disabled,
+  .is-disabled {
+    border: none;
   }
 }

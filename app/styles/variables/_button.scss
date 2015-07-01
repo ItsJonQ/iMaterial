@@ -17,6 +17,7 @@ $im-button--hover-shadow:               0 2px 4px rgba($black, 0.12) !default;
 $im-button--active-backgrond-color:     darken($im-button-backgrond-color, 6) !default;
 $im-button--active-shadow:              none !default;
 $im-button--focus-border-color:         $color-link !default;
+$im-button--disabled-border-color:      $color-border--disabled !default;
 
 // State :: Primary
 $im-button--primary--hover-background-color:      lighten($im-button--primary-background-color, 4) !default;

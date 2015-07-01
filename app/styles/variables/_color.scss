@@ -1,14 +1,17 @@
 // Variables :: Color
 
-$black:           #000 !default;
-$white:           #fff !default;
+$black:           #000000 !default;
+$white:           #ffffff !default;
 $blue:            #2F84E7 !default;
 $light-blue:      #8ED3FF !default;
 
 $color-primary:           $blue !default;
 $color-link:              $blue !default;
 
-$color-border:                  #ddd !default;
+$color-text--light:       #aaaaaa !default;
+
+$color-border:                  #dddddd !default;
 $color-border-edge:             darken($color-border, 4) !default;
 $color-border--primary:         $color-primary !default;
 $color-border--primary-edge:    darken($color-primary, 8) !default;
+$color-border--disabled:        #eeeeee !default;
