@@ -12,4 +12,8 @@
   line-height: $im-button-size;
   padding: $im-button-padding;
   text-transform: capitalize;
+
+  &:hover {
+    box-shadow: $im-button--hover-shadow;
+  }
 }
