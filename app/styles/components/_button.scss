@@ -1,19 +1,60 @@
 // Components :: Button
 
 .im-button {
-  background-color: $white;
+  @include transition(background 0.16s ease, border 0.16s ease, box-shadow 0.16s ease);
+  background-color: $im-button-backgrond-color;
   border: 1px solid;
   border-color: $im-button-border-color;
   border-radius: $im-button-border-radius;
   box-shadow: $im-button-shadow;
   color: $color-link;
+  display: inline-block;
   font-weight: $font-weight-bold;
   height: $im-button-size;
-  line-height: $im-button-size;
+  line-height: 1;
   padding: $im-button-padding;
   text-transform: capitalize;
 
   &:hover {
     box-shadow: $im-button--hover-shadow;
+  }
+
+  &:active {
+    background-color: $im-button--active-backgrond-color;
+    border-color: $im-button-border-color;
+    box-shadow: $im-button--active-shadow;
+  }
+
+  &:focus {
+    border-color: $im-button--focus-border-color;
+    outline: none;
+  }
+}
+
+// Modifiers
+.im-button--primary {
+  background-color: $im-button--primary-background-color;
+  border-color: $im-button--primary-border-color;
+  color: $white;
+
+  &:hover {
+    background-color: $im-button--primary--hover-background-color;
+    box-shadow: $im-button--primary--hover-shadow;
+  }
+
+  &:active {
+    background-color: $im-button--primary--active-background-color;
+  }
+
+  &:focus {
+    box-shadow: $im-button--primary--focus-shadow;
+
+    &:hover {
+      box-shadow: $im-button--hover-shadow, $im-button--primary--focus-shadow;
+    }
+
+    &:active {
+      box-shadow: $im-button--active-shadow, $im-button--primary--focus-shadow;
+    }
   }
 }
