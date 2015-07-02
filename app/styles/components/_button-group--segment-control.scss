@@ -2,8 +2,23 @@
 
 .im-button-group--segment-control {
   .im-button {
+    border-color: $im-button--primary-border-color;
+
     &:active {
       background-color: rgba($color-link, 0.08);
+    }
+
+    &:focus {
+      background-color: rgba($color-link, 0.08);
+    }
+
+    // State
+    &.is-active {
+      @extend .im-button--primary;
+
+      &:focus {
+        background-color: $color-link;
+      }
     }
   }
 }
