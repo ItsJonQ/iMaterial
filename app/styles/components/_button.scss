@@ -91,3 +91,13 @@
     border: none;
   }
 }
+
+.im-button--sm {
+  font-size: $im-button--sm-font-size;
+  height: $im-button--sm-size;
+  line-height: 1;
+}
+
+.im-button--block {
+  display: block;
+}

@@ -13,6 +13,8 @@ $im-button-size:                36px !default !default;
 // Modifier
 $im-button--primary-background-color:   $color-link !default;
 $im-button--primary-border-color:       $color-border--primary $color-border--primary $color-border--primary-edge !default;
+$im-button--sm-size:                    28px !default !default;
+$im-button--sm-font-size:               12px !default;
 
 // State
 $im-button--hover-shadow:               0 2px 4px rgba($black, 0.12) !default;
