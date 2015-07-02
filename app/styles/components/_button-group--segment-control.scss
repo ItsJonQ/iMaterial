@@ -1,0 +1,9 @@
+// Components :: Button Group (Segment Control)
+
+.im-button-group--segment-control {
+  .im-button {
+    &:active {
+      background-color: rgba($color-link, 0.08);
+    }
+  }
+}

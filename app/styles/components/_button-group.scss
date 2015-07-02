@@ -1,0 +1,34 @@
+// Components :: Button Group
+
+.im-button-group {
+  @include clearfix;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+  .im-button {
+    float: left;
+    position: relative;
+
+    &:focus {
+      z-index: 1;
+    }
+
+    & + .im-button {
+      margin-left: -1px;
+    }
+
+    &:first-child {
+      @include border-right-radius(0);
+      margin-left: 0;
+    }
+
+    &:last-child {
+      @include border-left-radius(0);
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+  }
+}

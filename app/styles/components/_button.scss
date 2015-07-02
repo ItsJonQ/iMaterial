@@ -1,7 +1,7 @@
 // Components :: Button
 
 .im-button {
-  @include transition(background 0.16s ease, border 0.16s ease, box-shadow 0.16s ease);
+  @include transition($im-button-transition);
   @include user-select(none);
   background-color: $im-button-backgrond-color;
   border: 1px solid;
@@ -80,6 +80,11 @@
 .im-button--link {
   border-color: transparent;
   box-shadow: none;
+
+  &:hover {
+    box-shadow: none;
+    text-decoration: underline;
+  }
 
   &:disabled,
   .is-disabled {
